@@ -40,7 +40,12 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; }
+  margin-bottom: 20px; 
+}
+
+#row-separator{
+  padding-top: 30px;
+}
 
 .bg-primary {
   background-color: #333333 !important; }
@@ -78,6 +83,13 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #222222; }
+
+#para-1{
+    padding-right: 100px;
+}
+#para-2{
+    padding-left: 100px;
+}
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -154,6 +166,7 @@ header.masthead {
   /**/
   background-attachment: fixed;
   background-repeat: no-repeat;
+
   /**/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -254,7 +267,7 @@ header.masthead {
       font-size: 22px; } }
 
 .call-to-action {
-  padding: 40px 0; }
+  padding: 20px 0; }
   .call-to-action h2 {
     margin: 0 auto 20px; }
 

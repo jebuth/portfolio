@@ -8,12 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Justin Buth - Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts -->
     <link href="bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -21,7 +21,7 @@
     <!-- Plugin CSS -->
     <link href="bootstrap/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles-->
     <link href="css/creative.css" rel="stylesheet">
 
     <!-- Logos -->
@@ -76,7 +76,8 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Justin<span class="buth"> Buth </span></h2>
             <hr class="light">
-            <p class="text-faded">As a recent graduate I've studied Computer Science at Cal Poly. I've held several internships and positions that have exposed me to the software developement cycle, verification engineering/testing, and rapidly changing web technologies.</p>
+            <p class="text-faded"> As a recent graduate, Cal Poly equipped me with a solid foundation of computer science concepts that I've built upon with personal projects and experience from
+            several internships. My technical experience has exposed me to the software development lifecycle, verification engineering, testing, and rapidly chaning web technologies.</p>
 
             <!-- logos -->
             <br>
@@ -107,121 +108,61 @@
       </div>
     </section>
 
-    <div class="call-to-action bg-dark">
+    <div class="call-to-action bg-dark" id="portfolio">
       <div class="container text-center">
         <h2>Recent Projects</h2>
-        <!-- <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
       </div>
     </div>
 
-    
+    <section class="p-0">
+      	<div class="container-fluid">
+      		<div class="row" id="row-separator">
+          		<div class="col-lg-6" display="inline-block">
+            	  	<video width="620" height="540" autoplay muted>
+            	  	  	<source src="img/space_shooter.mp4" type="video/mp4">
+            	  	</video>
+            	  	</div>
+            	  	<div class="col-lg-6">
+            	  	<br><br>
+            	  		<p id="para-1">A 2-dimensional space shooting game that I developed using Python's <a href="https://www.pygame.org/news" target="_blank">pyGame</a> API. pygame is an open source python library that allows for multimedia applications built
+            	  		on top of the SDL (Simple DirectMedia Layer) library. The library includes everything needed to create 2-dimensional videos such as my space shooter including support for 
+            	  		audio, keyboard and mouse events, sprites, and collision detection. In my game, the player controls a mini space rocket/jet-fighter through infinite purple space created by
+            	  		vertically scrolling a surface. The player maneuvers using WASD and fires rockets with spacebar. I chose to create waves of enemies with a "boss" after the 5th wave. I've created animations using multiple sprites for the player's movement (propulsions) and enemy death explosions. I've also added audio clips sounding on certain events such as firing and deaths. pygame provides its own collision detection function but I was unable to get it working so I created a simple one by comparing each objects x,y coordinates in each frame. Working on this application exposed me to video game concepts such as fps(frames per second), game loops, collision detection, and event handling.  </p>
+            	   	 <br><br><br>
+          			</div>
+        		</div>
+        		
+        		<div class="call-to-action bg-dark">
+    			</div>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-          
-          <div class="col-lg-4 col-sm-6">
-            <!-- <a class="portflio-box"> -->
-              <!-- <img class="img-fluid" src="https://media.giphy.com/media/y1zBgRM6wNavu/giphy.gif" alt=""> -->
-              <video width="620" height="540" autoplay loop >
-                <source src="img/space_shooter.mp4" type="video/mp4">
-              </video>
+        		<div class="row" id="row-separator">
+          		<div class="col-lg-6" display="inline-block">
+            	  	<br><br><br>
+            	  		<p id="para-2"> <b>Trackr</b> is a cross platform mobile application I've developed using Xamarin.Forms. I decided to use this technology because it allowed me to use Visual Studios which is the best IDE in my opinion. The user interface was implemented using XAML with C# handling the code-behind and SQLite for the lightweight database. The application allows users to create workout routines and save workouts. It helps to track how much weight you've lifted during that workout session for each specific workout and stores the values in a small database along with a timestamp. Once a workout has been logged more than once, the user can then check his/her progress visually by looking at a graph of their completed workouts. The graph was implemented using <a href="http://www.oxyplot.org/" target="_blank">OxyPlot</a>, which is an open source cross-platform plotting library for .NET. The most difficult part of this project was handling .NET's DateTime object and converting that to a string so that it could be stored in the database. These strings needed to be conerted back to DateTime objects once they were queried to be used as intervals for the x-axis of OxyPlot's line chart.
 
-              <!-- <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Python Space Shooter
-                  </div>
-                  <div class="project-name">
-                  	A 2D space shooting game written using python's pygame api. Features sound clips, intro
-                  	music, custom animation, and collision detection.
-                  </div>
-                </div>
-              </div> -->
-            <!-- </a> -->
-          </div>
-          <!-- <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div> 
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          -->
-        </div>
-      </div>
+            	  		 </p>
+            	   	 <br><br><br>
+            	  	</div>
+            	  	<div class="col-lg-6">
+
+            	  			<video width="620" height="540" autoplay loop >
+            	  	  	<source src="img/trackr.mov" type="video/mp4">
+            	  	</video>
+            	  	
+          			</div>
+        		</div>
+
+        		<div class="call-to-action bg-dark">
+    			  
+    			</div>
+        	</div>
+
+        	</div>
+      	</div>
     </section>
 
     <!-- -->
-    <section id="services">
+    <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -248,14 +189,14 @@
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
+              <a href="https://www.linkedin.com/in/justin-buth-8b1829136/" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
               <h3>LinkedIn</h3>
               <p class="text-muted">justin buth</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
-              <i class="devicon-github-plain"></i>
+              <a href="https://github.com/jebuth" target="_blank"><i class="devicon-github-plain"></i></a>
               <h3>GitHub</h3>
               <p class="text-muted">/jebuth</p>
             </div>
@@ -264,29 +205,6 @@
       </div>
     </section>
 
-    <!-- <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/jquery/jquery.min.js"></script>
