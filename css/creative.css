@@ -21,6 +21,10 @@ hr {
 hr.light {
   border-color: white; }
 
+#personal-link{
+  color: #000;
+}
+
 a {
   color: #F05F40;
   -webkit-transition: all 0.2s;
@@ -28,6 +32,8 @@ a {
   transition: all 0.2s; }
   a:focus, a:hover {
     color: #f05f40; }
+
+
 
 h1,
 h2,
@@ -161,7 +167,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/notebook.jpg");
+  background-image: url("../img/wood.jpg");
   background-position: center;
   /**/
   background-attachment: fixed;
